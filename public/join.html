@@ -1,0 +1,24 @@
+<!-- public/join.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Join Game</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <h2>Controller</h2>
+  <div id="controls">
+    <button onclick="sendDirection('up')">⬆️</button>
+    <div>
+      <button onclick="sendDirection('left')">⬅️</button>
+      <button onclick="sendAction('brake')">🅿️</button>
+      <button onclick="sendDirection('right')">➡️</button>
+    </div>
+    <button onclick="sendDirection('down')">⬇️</button>
+    <button onclick="sendAction('boost')">⚡</button>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/js/join.js"></script>
+</body>
+</html>
